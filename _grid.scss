@@ -1,0 +1,53 @@
+/*  
+    xs -mobile 
+    sm - tablet
+    md - laptop
+    lg - desctop
+*/
+@media (min-width: 1281px) {
+    .container {
+        width: 940px;
+    }
+    @for $i from 1 through 12 {
+        .col-ld-#{$i} {
+            flex: 0 0 percentage($i/12);
+            max-width: percentage($i/12);
+        }
+    }
+}  
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .container {
+        width: 800px;
+    }
+    @for $i from 1 through 12 {
+        .col-md-#{$i} {
+            flex: 0 0 percentage($i/12);
+            max-width: percentage($i/12);
+        }
+    }
+}    
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: 700px;
+    }
+    @for $i from 1 through 12 {
+        .col-sm-#{$i} {
+            flex: 0 0 percentage($i/12);
+            max-width: percentage($i/12);
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px), (max-width: 480px) {
+    .container {
+        width: 450px;
+    }
+    @for $i from 1 through 12 {
+        .col-xs-#{$i} {
+            flex: 0 0 percentage($i/12);
+            max-width: percentage($i/12);
+        }
+    }
+}

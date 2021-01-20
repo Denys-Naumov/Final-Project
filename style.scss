@@ -1,0 +1,322 @@
+@import "./grid";
+@import "./variables";
+
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $pink;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    margin: auto;
+    padding: 0 15px;
+}
+.row {
+    padding: 0 -15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+[class*=col-] {
+    padding: 0 15px;
+}
+.triangle {
+    margin-left: 3px;
+}
+.bg-white {
+    background-color: $white;
+}
+.bold {
+    font-weight: bold;
+}
+.relative {
+    position: relative;
+}
+/* GENERAL BUTTON CLASS */
+.btn {
+    width: 125px;
+    height: 35px;
+    background-color: $blue;
+    color: $white;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    &:hover {
+        transition: ease-in-out .1s;
+        opacity: .5;
+        color: $black;
+    }
+}
+/* HEADER */
+
+.header-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 3px 15px 0;
+    font-size: 9px;
+    font-weight: medium;
+    color: $white;
+    p {
+        margin-left: 3px;
+    }
+}
+.header-lang {
+    justify-content: flex-end;
+}
+/* HEADER MENU*/
+.current:before {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: $blue;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    li {
+        position: relative;
+        list-style: none;
+        a{
+            width: 90px;
+            height: 75px;
+            text-align: center;
+            line-height: 75px;
+            display: block;
+            text-transform: uppercase;
+            color: $black;
+            font-size: 14px;
+            font-size: medium;
+            text-decoration: none;
+        }
+
+    }
+}
+/* HEADER SEARCH*/
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.search-field {
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid $grey;
+    padding: 5px;
+    color: $black;
+    font-size: 11px;
+    font-size: medium;
+    outline:none;
+}
+.search-img {
+    position: absolute;
+    top: calc(50% - 5px);
+    left: 85%;
+}
+
+/* MAIN*/
+/* MAIN Servers*/
+.world-map {
+    position: absolute;
+}
+.servers {
+    color: $white;
+    h1 {
+        text-transform: uppercase;
+        font-size: 40px;
+        margin-top: 35px;
+    }
+    h2 {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+    .offer-box {
+        display: flex;
+        margin: 10px 0 10px 5px;
+        img {
+            margin-right: 5px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+.servers-imgs {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    img {
+        height: 175px;
+        margin: 0 20px 0 20px;
+    }
+    .large-box {
+        position: absolute;
+        height: 260px;
+        bottom: -15%;
+        z-index: 300;
+    }
+}
+.clouds-img {
+    width: 100%;
+}
+
+/* MAIN Plans*/
+.plans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    h2 {
+        font-size: 20px;
+        margin: 50px 0 30px;
+    }
+    h3 {
+        font-size: 17px;
+        margin: 30px 0 15px;
+    }
+    p {
+        font-size: 14px;
+    }
+    img {
+        margin-top: 80px;
+        height: 100px;
+    }
+}
+/* MAIN Check domain*/
+.check-domain-shadow {
+    height: 3px;
+    width: 100%;
+    margin: 3px 0;
+    background: linear-gradient(90deg, rgba(0,0,0,0) 20%, rgba(0,0,0,.1) 50%, rgba(0,0,0,0) 80%);
+}
+.check-domain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+    font-size: 20px;
+    margin-top: 65px;
+    }
+    p   {
+    font-size: 14px;
+    margin: 25px 0;
+    }
+}
+
+/* MAIN Search domain*/
+
+.check {
+    margin-bottom: 50px;
+    form {
+        border: 1px solid $grey;
+        padding: 3px;
+        border-radius: 7px;
+        input {
+            width: 350px;
+            height: 40px;
+            border: 1px solid $grey;
+            border-right: none;
+            border-radius: 10px 0 0 10px;
+            font-size: 16px;
+            outline: none;
+        }
+        select {
+            border: 1px solid $grey;
+            border-left: none;
+            border-radius: 0 10px 10px 0;
+            width: 60px;
+            height: 40px;
+            margin-left: -5px;
+            &:focus {
+                outline: none;
+            }
+        }
+        button {
+            margin: 7px 20px;
+        }
+    }
+}
+
+/* MAIN Prices*/
+.prices-row {
+    display: flex;
+    justify-content: space-around;
+    .prices {
+        .prices-col-top {
+            border-radius: 10px 10px 0 0;
+            border: 2px solid $grey;
+            border-bottom: none;
+            position: relative;
+            height: 165px;
+            background-color: $blue;
+            .circles {
+                .circle-white {
+                    position: absolute;
+                    top: calc(0% - 53.5px);
+                    left: calc(50% - 53.5px);
+                }
+                .circle-blue {
+                    position: absolute;
+                    top: calc(0% - 40.5px);
+                    left: calc(50% - 40.5px);
+                }
+            }
+            .world-map-prices {
+                position: absolute;
+                width: 100%;
+                top: 30%;
+                left: 0;
+            }
+            .box-prices {
+                position: absolute;
+                width: 50%;
+                bottom: 0;
+                left: 25%;
+            }
+            .cloud-prices {
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                left: 0;
+            }
+        }
+        .prices-col-bot {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 11px;
+            border-radius: 0 0 10px 10px;
+            border: 2px solid $grey;
+            border-top: none;
+            .line {
+                display: flex;
+                width: 100%;
+                justify-content: flex-start;
+                margin: 6px 0;
+            }
+        }
+        button {
+            margin: 10px 0;
+        }
+    }
+}
+
+
+
