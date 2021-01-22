@@ -90,7 +90,8 @@ body {
     li {
         position: relative;
         list-style: none;
-        a{
+        .menu-hover{
+            display: block;
             width: 90px;
             height: 75px;
             text-align: center;
@@ -101,8 +102,11 @@ body {
             font-size: 14px;
             font-size: medium;
             text-decoration: none;
+            &:hover {
+                background-color: $blue;
+                transition: .3s ease-in-out;
+            }
         }
-
     }
 }
 /* HEADER SEARCH*/
@@ -175,6 +179,7 @@ body {
 }
 .clouds-img {
     width: 100%;
+    margin-bottom: -5px;
 }
 
 /* MAIN Plans*/
@@ -210,20 +215,25 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 60px;
     h1 {
     font-size: 20px;
-    margin-top: 65px;
     }
     p   {
     font-size: 14px;
-    margin: 25px 0;
+    margin: 35px 0;
+    text-align: center;
+    }
+    .shadow {
+        position: absolute;
+        top: -80px;
     }
 }
 
 /* MAIN Search domain*/
 
 .check {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     form {
         border: 1px solid $grey;
         padding: 3px;
@@ -236,6 +246,7 @@ body {
             border-radius: 10px 0 0 10px;
             font-size: 16px;
             outline: none;
+            padding: 3px;
         }
         select {
             border: 1px solid $grey;
@@ -258,6 +269,7 @@ body {
 .prices-row {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 60px;
     .prices {
         .prices-col-top {
             border-radius: 10px 10px 0 0;
@@ -276,6 +288,25 @@ body {
                     position: absolute;
                     top: calc(0% - 40.5px);
                     left: calc(50% - 40.5px);
+                }
+                .circle-text {
+                    display: block;
+                    height: 100px;
+                    width: 100px;
+                    color: $white;
+                    position: absolute;
+                    text-align: center;
+                    top: -15%;
+                    left: 25%;
+                    h2 {
+                        font-size: 14px;
+                    }
+                    h1 {
+                        font-size: 17px;
+                    }
+                    p  {
+                        font-size: 11px;
+                    }
                 }
             }
             .world-map-prices {
@@ -317,6 +348,58 @@ body {
         }
     }
 }
+.btn.contact-us {
+    margin-bottom: 60px;
+}
+.check.check2 {
+    margin-bottom: 0px;
+}
 
+/* FOOTER*/
+.footer {
+    color: $white;
+    .container{
+        .row{
+            h1 {
+                font-size: 17px;
+                margin: 20px 0;
+                font-weight: 400;
+            }
+            h3 {
+                font-size: 14px;
+                font-weight: 500;
 
+            }
+            .footer-li {
+                font-size: 14px;
+                margin: 10px 0 10px 20px;
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: $white;
+                    font-weight: 300;
+                    text-transform: uppercase;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            p {
+                font-size: 11px;
+                margin: 10px 0;
+            }
+
+        }
+    }
+}
+.p-read-more {
+    text-align: end;
+    a {
+        text-decoration: none;
+        color: $white;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
 

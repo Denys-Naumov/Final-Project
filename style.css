@@ -366,7 +366,8 @@ body {
   position: relative;
   list-style: none;
 }
-.menu li a {
+.menu li .menu-hover {
+  display: block;
   width: 90px;
   height: 75px;
   text-align: center;
@@ -377,6 +378,10 @@ body {
   font-size: 14px;
   font-size: medium;
   text-decoration: none;
+}
+.menu li .menu-hover:hover {
+  background-color: #52c0ee;
+  transition: 0.3s ease-in-out;
 }
 
 /* HEADER SEARCH*/
@@ -391,7 +396,7 @@ body {
   width: 150px;
   height: 40px;
   border-radius: 10px;
-  border: 1px solid #ebeef1;
+  border: 1px solid #ced9df;
   padding: 5px;
   color: #000;
   font-size: 11px;
@@ -453,6 +458,7 @@ body {
 
 .clouds-img {
   width: 100%;
+  margin-bottom: -5px;
 }
 
 /* MAIN Plans*/
@@ -490,36 +496,42 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 60px;
 }
 .check-domain h1 {
   font-size: 20px;
-  margin-top: 65px;
 }
 .check-domain p {
   font-size: 14px;
-  margin: 25px 0;
+  margin: 35px 0;
+  text-align: center;
+}
+.check-domain .shadow {
+  position: absolute;
+  top: -80px;
 }
 
 /* MAIN Search domain*/
 .check {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 .check form {
-  border: 1px solid #ebeef1;
+  border: 1px solid #ced9df;
   padding: 3px;
   border-radius: 7px;
 }
 .check form input {
   width: 350px;
   height: 40px;
-  border: 1px solid #ebeef1;
+  border: 1px solid #ced9df;
   border-right: none;
   border-radius: 10px 0 0 10px;
   font-size: 16px;
   outline: none;
+  padding: 3px;
 }
 .check form select {
-  border: 1px solid #ebeef1;
+  border: 1px solid #ced9df;
   border-left: none;
   border-radius: 0 10px 10px 0;
   width: 60px;
@@ -537,10 +549,11 @@ body {
 .prices-row {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 60px;
 }
 .prices-row .prices .prices-col-top {
   border-radius: 10px 10px 0 0;
-  border: 2px solid #ebeef1;
+  border: 2px solid #ced9df;
   border-bottom: none;
   position: relative;
   height: 165px;
@@ -555,6 +568,25 @@ body {
   position: absolute;
   top: calc(0% - 40.5px);
   left: calc(50% - 40.5px);
+}
+.prices-row .prices .prices-col-top .circles .circle-text {
+  display: block;
+  height: 100px;
+  width: 100px;
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  top: -15%;
+  left: 25%;
+}
+.prices-row .prices .prices-col-top .circles .circle-text h2 {
+  font-size: 14px;
+}
+.prices-row .prices .prices-col-top .circles .circle-text h1 {
+  font-size: 17px;
+}
+.prices-row .prices .prices-col-top .circles .circle-text p {
+  font-size: 11px;
 }
 .prices-row .prices .prices-col-top .world-map-prices {
   position: absolute;
@@ -580,7 +612,7 @@ body {
   align-items: center;
   font-size: 11px;
   border-radius: 0 0 10px 10px;
-  border: 2px solid #ebeef1;
+  border: 2px solid #ced9df;
   border-top: none;
 }
 .prices-row .prices .prices-col-bot .line {
@@ -591,6 +623,57 @@ body {
 }
 .prices-row .prices button {
   margin: 10px 0;
+}
+
+.btn.contact-us {
+  margin-bottom: 60px;
+}
+
+.check.check2 {
+  margin-bottom: 0px;
+}
+
+/* FOOTER*/
+.footer {
+  color: #fff;
+}
+.footer .container .row h1 {
+  font-size: 17px;
+  margin: 20px 0;
+  font-weight: 400;
+}
+.footer .container .row h3 {
+  font-size: 14px;
+  font-weight: 500;
+}
+.footer .container .row .footer-li {
+  font-size: 14px;
+  margin: 10px 0 10px 20px;
+}
+.footer .container .row .footer-li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.footer .container .row .footer-li a:hover {
+  text-decoration: underline;
+}
+.footer .container .row p {
+  font-size: 11px;
+  margin: 10px 0;
+}
+
+.p-read-more {
+  text-align: end;
+}
+.p-read-more a {
+  text-decoration: none;
+  color: #fff;
+}
+.p-read-more a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
