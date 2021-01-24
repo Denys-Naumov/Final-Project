@@ -489,7 +489,7 @@ body {
   height: 3px;
   width: 100%;
   margin: 3px 0;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0) 80%);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0) 100%);
 }
 
 .check-domain {
@@ -674,6 +674,137 @@ body {
 }
 .p-read-more a:hover {
   text-decoration: underline;
+}
+
+/* PAGE 2 ______ SERVICES ______*/
+/* Main */
+/* Our Services */
+.our-services {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: #565d79;
+}
+.our-services h1 {
+  font-size: 25px;
+  margin-top: 30px;
+}
+.our-services p {
+  margin: 15px 0;
+}
+
+/* Our Services */
+.fast-services-img {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.fast-services-img img {
+  margin-top: 30px;
+  width: 200px;
+}
+
+.fast-services, .modern-adn-fast, .safe-and-protected {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: #565d79;
+}
+.fast-services h1, .modern-adn-fast h1, .safe-and-protected h1 {
+  font-size: 37px;
+  margin: 20px 0;
+}
+.fast-services p, .modern-adn-fast p, .safe-and-protected p {
+  font-size: 13px;
+  margin: 20px 0;
+}
+.fast-services .fast-service-row, .modern-adn-fast .fast-service-row, .safe-and-protected .fast-service-row {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+}
+.fast-services .fast-service-row p, .modern-adn-fast .fast-service-row p, .safe-and-protected .fast-service-row p {
+  margin: 0;
+}
+.fast-services .fast-service-row img, .modern-adn-fast .fast-service-row img, .safe-and-protected .fast-service-row img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Modern and Fast */
+.modern-adn-fast-img {
+  display: flex;
+  flex-direction: row;
+}
+.modern-adn-fast-img .modern-and-fast-row-1, .modern-adn-fast-img .modern-and-fast-row-2 {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  z-index: 200;
+  margin-top: 11%;
+  font-size: 13px;
+}
+.modern-adn-fast-img .modern-and-fast-row-1 {
+  margin-left: 18%;
+}
+.modern-adn-fast-img .modern-and-fast-row-2 {
+  margin-left: 10%;
+}
+.modern-adn-fast-img .message-img {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 285px;
+  z-index: 100;
+}
+.modern-adn-fast-img .one-box-img {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  width: 240px;
+  z-index: 90;
+}
+
+/* Safe and Protected */
+.safe-and-protected-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Why we are the best */
+.we-are-the-best {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  color: #565d79;
+}
+.we-are-the-best h1 {
+  font-size: 25px;
+}
+
+.we-are-the-best-row {
+  display: flex;
+}
+.we-are-the-best-row .small-blue-circle, .we-are-the-best-row .icon-in-circle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+.we-are-the-best-row .we-are-the-best-col {
+  margin: 10px 0 10px 80px;
+}
+.we-are-the-best-row .we-are-the-best-col h1 {
+  margin: 10px 0;
+  font-size: 17px;
+}
+.we-are-the-best-row .we-are-the-best-col p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+.we-are-the-best-row .we-are-the-best-col-margin {
+  margin-bottom: 80px;
 }
 
 /*# sourceMappingURL=style.css.map */
