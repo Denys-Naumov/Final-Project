@@ -1,48 +1,25 @@
-// TABS
-let tabItem = document.querySelectorAll(".tab-item");
-let tabContentText = document.querySelectorAll(".tabs-text-p");
-let tabContentImg = document.querySelectorAll(".tabs-img");
-let tabsWrap = document.querySelector(".tabs-wrap")
+// LANGUAGE
+let languageSelect = document.querySelector(".language");
+let languageImg = document.querySelectorAll(".language-img");
+console.log(languageSelect);
 
-console.log(tabsWrap);
-console.log(tabContentText);
-console.log(tabContentImg);
-console.log(tabItem);
-
-function hideTabsContent () {
-    tabContentText.forEach(tab => {
-        tab.classList.add("hide")
-        tab.classList.remove("show")
-    })
-    tabContentImg.forEach(tab => {
-        tab.classList.add("hide")
-        tab.classList.remove("show")
-    })
-    tabItem.forEach(item => {
-        item.classList.remove("active")
-    })
+function changeLanguage (addEl1, addEl2, addEl3, remEl1, remEl2, remEl3) {
+    languageImg[0].classList.add(addEl1);
+    languageImg[1].classList.add(addEl2);
+    languageImg[2].classList.add(addEl3);
+    languageImg[0].classList.remove(remEl1);
+    languageImg[1].classList.remove(remEl2);
+    languageImg[2].classList.remove(remEl3);
 }
 
-function showTabsContent(i = 0) {
-    tabContentText[i].classList.add("show");
-    tabContentText[i].classList.remove("hide");
-    tabContentImg[i].classList.add("show");
-    tabContentImg[i].classList.remove("hide");
-    tabItem[i].classList.add("active")
-}
-
-hideTabsContent();
-showTabsContent();
-
-tabsWrap.addEventListener("click", function(e) {
-    let target = e.target;
-    console.log(target)
-    if (target.classList.contains("tab-item")) {
-        tabItem.forEach((item,i) => {
-            if(target == item) {
-                hideTabsContent ();
-                showTabsContent (i);
-            }
-        })
+languageSelect.addEventListener("change", function() {
+    if (this.value == "eng") {
+        changeLanguage ("show-inline","hide","hide","hide","show-inline","show-inline");
+    } else if (this.value == "ukr") {
+        changeLanguage ("hide", "show-inline","hide","show-inline","hide","show-inline");
+    } else if (this.value == "ru") {
+        changeLanguage ("hide","hide","show-inline","show-inline","show-inline","hide");
+    } else {
+        console.log("Error (Header Language Bar)");
     }
 })

@@ -26,9 +26,16 @@
                 </div>
                 <div class="col-ld-8 col-md-8 col-sm-4 col-xs-12">
                     <div class="header-lang header-box">
-                        <img src="img/eng.png" alt="">
-                        <p>ENG</p>
-                        <img class="triangle" src="img/triangle-white.png" alt="">
+                        <form action="">
+                            <img class="language-img show-inline" src="img/eng.png" alt="">
+                            <img class="language-img hide" src="img/ukr.jpg" alt="">
+                            <img class="language-img hide" src="img/russ.jpg" alt="">
+                            <select class="language" name="language" aria-placeholder="placeholder" id="language">
+                                <option value="eng">ENG</option>
+                                <option value="ukr">UKR</option>
+                                <option value="ru">RU</option>
+                            </select>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -343,5 +350,6 @@
     </footer>
 
     <script src="app.js"></script>
+    <script src="tabs.js"></script>
 </body>
 </html>
