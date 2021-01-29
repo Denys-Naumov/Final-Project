@@ -201,7 +201,7 @@
 }
 @media (min-width: 481px) and (max-width: 767px), (max-width: 480px) {
   .container {
-    width: 450px;
+    width: 320px;
   }
 
   .col-xs-1 {
@@ -332,6 +332,13 @@ body {
 }
 
 /* HEADER */
+.header {
+  background-color: #c4a2e2;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
 .header-box {
   display: flex;
   justify-content: center;
@@ -436,6 +443,7 @@ body {
 
 .world-map {
   position: absolute;
+  left: -60px;
 }
 
 .servers {
@@ -536,6 +544,7 @@ body {
 /* MAIN Search domain*/
 .check {
   margin-bottom: 60px;
+  text-align: center;
 }
 .check form {
   border: 1px solid #ced9df;
@@ -732,6 +741,7 @@ body {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  text-align: center;
   color: #565d79;
 }
 .fast-services h1, .modern-adn-fast h1, .safe-and-protected h1 {
@@ -1055,6 +1065,309 @@ body {
 .tab-item.active {
   background-color: #ced9df;
   color: #000;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .search {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .search-field {
+    width: 600px;
+  }
+
+  .check-domain img {
+    width: 1000px;
+  }
+
+  .servers-imgs {
+    align-items: center;
+  }
+  .servers-imgs img {
+    height: 160px;
+  }
+  .servers-imgs .large-box {
+    bottom: 15%;
+  }
+
+  .row .prices .prices-col-top.prices-col-top-page3 .person {
+    left: 20%;
+  }
+  .row .prices .prices-col-top.prices-col-top-page3 .person-2 {
+    left: 10%;
+  }
+  .row .prices .prices-col-top.prices-col-top-page3 .person-3 {
+    left: 30%;
+  }
+  .row .prices .prices-col-top.prices-col-top-page3 .person-4 {
+    left: 30%;
+  }
+
+  .tabs-img img {
+    left: 20%;
+  }
+
+  .prices-row .prices .prices-col-top .circles .circle-text {
+    left: 20%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .search {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .search-field {
+    width: 550px;
+  }
+
+  .servers-imgs {
+    align-items: center;
+  }
+  .servers-imgs img {
+    height: 140px;
+  }
+  .servers-imgs .large-box {
+    bottom: 15%;
+  }
+
+  .world-map {
+    position: absolute;
+    width: 750px;
+    left: -60px;
+    top: 0;
+  }
+
+  .prices-row .prices .prices-col-top .circles .circle-text {
+    left: 33%;
+  }
+  .prices-row .prices .prices-col-bot {
+    margin-bottom: 50px;
+  }
+  .prices-row .prices .prices-col-bot .line {
+    justify-content: center;
+  }
+
+  .check-domain img {
+    width: 750px;
+  }
+
+  .row .prices .prices-col-top.prices-col-top-page3 .person {
+    left: 20%;
+  }
+  .row .prices .prices-col-top.prices-col-top-page3 .person-2 {
+    left: 0;
+  }
+  .row .prices .prices-col-top.prices-col-top-page3 .person-3 {
+    left: 25%;
+  }
+  .row .prices .prices-col-top.prices-col-top-page3 .person-4 {
+    left: 30%;
+  }
+
+  .tabs-img img {
+    left: 15%;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px), (max-width: 480px) {
+  .container {
+    width: 300px;
+  }
+
+  .current {
+    background-color: #52c0ee;
+  }
+
+  .logo {
+    justify-content: center;
+    margin: 15px 0;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .menu {
+    overflow-x: scroll;
+  }
+
+  .world-map {
+    display: none;
+  }
+
+  .check-domain img {
+    width: 300px;
+  }
+
+  .servers-imgs {
+    display: none;
+  }
+
+  .check form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .check form input {
+    width: 75%;
+  }
+  .check form select {
+    width: 25%;
+  }
+
+  .prices-row .prices .prices-col-top .circles .circle-text {
+    left: 30%;
+  }
+  .prices-row .prices .prices-col-bot {
+    margin-bottom: 60px;
+  }
+  .prices-row .prices .prices-col-bot .line {
+    justify-content: center;
+  }
+
+  .menu li .menu-hover {
+    width: 200px;
+  }
+
+  .header-row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-mobile-menu {
+    margin-top: 15px;
+    width: 20px;
+    height: 20px;
+    position: relative;
+  }
+  .nav-mobile-menu span {
+    height: 2px;
+    background-color: #565d79;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transition: 0.25s ease-in-out;
+  }
+  .nav-mobile-menu span:nth-child(1) {
+    top: 7px;
+  }
+  .nav-mobile-menu span:nth-child(2) {
+    top: 14px;
+  }
+  .nav-mobile-menu span:nth-child(3) {
+    top: 21px;
+  }
+
+  .hidden-menu {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 150px;
+    right: 0;
+    width: 200px;
+    max-width: 200px;
+    transition: all 500ms ease-in-out;
+    transform: translateX(150%);
+  }
+
+  .nav-mobile-menu.active-menu span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+  .nav-mobile-menu.active-menu span:nth-child(2) {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+  .nav-mobile-menu.active-menu span:nth-child(3) {
+    transform: scale(0);
+  }
+
+  .navigation.active-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    z-index: 100;
+  }
+
+  .modern-adn-fast-img .modern-and-fast-row-1 {
+    margin-left: 10%;
+  }
+  .modern-adn-fast-img .modern-and-fast-row-2 {
+    margin-left: 15%;
+  }
+  .modern-adn-fast-img .message-img {
+    left: 0;
+  }
+  .modern-adn-fast-img .one-box-img {
+    top: 50%;
+  }
+
+  .safe-and-protected-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .row .prices .prices-col-top.prices-col-top-page3 .person {
+    left: 10%;
+  }
+  .row .prices .prices-col-top.prices-col-top-page3 .person-3 {
+    left: 15%;
+  }
+  .row .prices .prices-col-top.prices-col-top-page3 .person-4 {
+    left: 25%;
+  }
+
+  .tabs-img img {
+    left: 15%;
+  }
+
+  .tabl {
+    display: none;
+  }
+
+  .feature-compiration {
+    display: none;
+  }
+
+  .send-mail {
+    justify-content: center;
+    text-align: center;
+  }
+  .send-mail form h1 {
+    font-size: 15px;
+    margin: 3px 0;
+  }
+  .send-mail form input {
+    width: 100%;
+    background-color: #edf2f6;
+    border: 1px solid #ced9df;
+    font-size: 16px;
+    outline: none;
+    padding: 3px;
+    margin: 10px 0;
+  }
+  .send-mail form textarea {
+    max-width: 100%;
+    min-width: 100%;
+    background-color: #edf2f6;
+    border: 1px solid #ced9df;
+    font-size: 16px;
+    outline: none;
+    padding: 3px;
+    margin: 10px 0 30px 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

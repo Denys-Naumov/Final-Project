@@ -1,7 +1,6 @@
 // LANGUAGE
 let languageSelect = document.querySelector(".language");
 let languageImg = document.querySelectorAll(".language-img");
-console.log(languageSelect);
 
 function changeLanguage (addEl1, addEl2, addEl3, remEl1, remEl2, remEl3) {
     languageImg[0].classList.add(addEl1);
@@ -21,5 +20,19 @@ languageSelect.addEventListener("change", function() {
         changeLanguage ("hide","hide","show-inline","show-inline","show-inline","hide");
     } else {
         console.log("Error (Header Language Bar)");
+    }
+})
+
+// MOBILE MENU
+
+mobileMenu = document.querySelector(".nav-mobile-menu");
+mainMenu = document.querySelector(".menu");
+
+mobileMenu.addEventListener("click", function(){
+    mobileMenu.classList.toggle("active-menu");
+    if(mobileMenu.classList.contains("active-menu")) {
+        mainMenu.classList.add("active-menu")
+    } else {
+        mainMenu.classList.remove("active-menu")
     }
 })
