@@ -1175,6 +1175,10 @@ body {
     width: 300px;
   }
 
+  .menu {
+    overflow-x: none;
+  }
+
   .current {
     background-color: #52c0ee;
   }
@@ -1331,6 +1335,10 @@ body {
 
   .tabs-img img {
     left: 15%;
+  }
+
+  .prices {
+    margin-bottom: 50px;
   }
 
   .tabl {

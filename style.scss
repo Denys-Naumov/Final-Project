@@ -912,6 +912,9 @@ body {
     .container {
         width: 300px;
     }
+    .menu {
+        overflow-x: none;
+    }
     .current {
         background-color: $blue;
     }
@@ -1084,6 +1087,9 @@ body {
         img {
             left: 15%;
         }
+    }
+    .prices {
+        margin-bottom: 50px;
     }
     // Page 4
     .tabl {
