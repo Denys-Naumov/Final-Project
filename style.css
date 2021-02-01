@@ -403,6 +403,7 @@ body {
   font-size: 14px;
   font-size: medium;
   text-decoration: none;
+  overflow: hidden;
 }
 .menu li .menu-hover:hover {
   background-color: #52c0ee;
@@ -436,6 +437,22 @@ body {
 }
 
 /* MAIN*/
+/* SLIDER */
+.swiper-container {
+  width: 100%;
+  height: 200px;
+  background-color: #c4a2e2;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #f2e1fc;
+}
+.swiper-slide img {
+  height: 200px;
+}
+
 /* MAIN Servers*/
 .main {
   box-shadow: inset 0 5px 10px #565d79;
@@ -1230,6 +1247,9 @@ body {
     justify-content: center;
   }
 
+  .menu {
+    overflow-x: unset;
+  }
   .menu li .menu-hover {
     width: 200px;
   }
